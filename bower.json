@@ -1,0 +1,18 @@
+{
+  "name": "besouro",
+  "version": "0.0.0",
+  "homepage": "https://github.com/desenvolvedor-es/besouro",
+  "authors": [
+    "Rafael Lyra <rafael@rafaellyra.com>"
+  ],
+  "description": "An lightweight eCommerce plataform",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
