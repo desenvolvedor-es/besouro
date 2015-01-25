@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/desenvolvedor-es/besouro.png?label=ready&title=Ready)](https://waffle.io/desenvolvedor-es/besouro)
 besouro
 =======
 
