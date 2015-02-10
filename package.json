@@ -26,5 +26,8 @@
     "debug": "~2.0.0",
     "node-compass": "0.2.3",
     "twig": "git://github.com/leroy-merlin-br/twig.js.git"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11"
   }
 }
