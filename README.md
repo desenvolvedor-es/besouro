@@ -2,7 +2,7 @@
 besouro
 =======
 
-An lightweight eCommerce plataform to small projects
+An lightweight eCommerce plataform
 
 # Goal
 
