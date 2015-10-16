@@ -4,6 +4,11 @@ besouro
 
 An lightweight eCommerce plataform to small projects
 
+# Setup
+
+```bash
+npm i
+```
 
 # Running the server
 
