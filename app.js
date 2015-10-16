@@ -1,16 +1,18 @@
-var express = require('express');
-var twig = require("twig");
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var stylus = require('stylus');
+var express = require('express'),
+    twig = require("twig"),
+    path = require('path'),
+    favicon = require('serve-favicon'),
+    logger = require('morgan'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser'),
+    stylus = require('stylus'),
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+    routes = require('./routes/index'),
+    users = require('./routes/users'),
 
-var app = express();
+    nib = require('nib'),
+
+    app = express();
 
 
 // view engine setup
@@ -30,11 +32,22 @@ app.use('/', routes);
 app.use('/users', users);
 
 //compiling stylus to css
+function compile(str, path) {
+    var r = stylus(str)
+        .set('filename', path)
+        .set('compress', true)
+        .use(nib());
+    console.log(r);
+    return r;
+}
+
+
 app.use(stylus.middleware({
     src: __dirname + '/resources/stylesheets/',
     dest: __dirname + '/public/stylesheets/',
     debug: true,
-    force: true
+    force: true,
+    compile: compile
 }));
 
 app.use(express.static(__dirname + '/public'))

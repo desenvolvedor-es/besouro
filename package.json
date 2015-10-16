@@ -28,6 +28,7 @@
     "twig": "git://github.com/rafaellyra/twig.js.git"
   },
   "devDependencies": {
-    "gulp": "~3.8.11"
+    "gulp": "~3.8.11",
+    "nib": "^1.1.0"
   }
 }
